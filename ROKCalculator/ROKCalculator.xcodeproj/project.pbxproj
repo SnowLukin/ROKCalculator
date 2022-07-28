@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D79443A5288E9FD10078C8B0 /* ROKCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */; };
+		D79443A7288E9FD10078C8B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443A6288E9FD10078C8B0 /* ContentView.swift */; };
+		D79443A9288E9FD60078C8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79443A8288E9FD60078C8B0 /* Assets.xcassets */; };
+		D79443AC288E9FD60078C8B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79443AB288E9FD60078C8B0 /* Preview Assets.xcassets */; };
+		D79443AE288E9FD60078C8B0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443AD288E9FD60078C8B0 /* Persistence.swift */; };
+		D79443B1288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D79443AF288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld */; };
+		D79443BB288EA06B0078C8B0 /* RssCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443BA288EA06B0078C8B0 /* RssCalculatorViewModel.swift */; };
+		D79443C4288ECBC30078C8B0 /* KingdomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443C3288ECBC20078C8B0 /* KingdomView.swift */; };
+		D79443C828902A4E0078C8B0 /* AccountRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443C728902A4D0078C8B0 /* AccountRowView.swift */; };
+		D79443CC28903A8C0078C8B0 /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443CB28903A8C0078C8B0 /* PieSliceView.swift */; };
+		D79443CE28903BB70078C8B0 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443CD28903BB70078C8B0 /* PieChartView.swift */; };
+		D79443D12890449F0078C8B0 /* TotalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443D02890449F0078C8B0 /* TotalTabView.swift */; };
+		D7AFC21B289060DE00BC2CEA /* Kingdom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21A289060DE00BC2CEA /* Kingdom.swift */; };
+		D7AFC21D289060E400BC2CEA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21C289060E400BC2CEA /* Account.swift */; };
+		D7AFC21F2890645400BC2CEA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21E2890645400BC2CEA /* Resources.swift */; };
+		D7AFC224289080B500BC2CEA /* TotalTabDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC223289080B500BC2CEA /* TotalTabDetailView.swift */; };
+		D7AFC2262890819200BC2CEA /* TotalTabPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2252890819200BC2CEA /* TotalTabPreviewView.swift */; };
+		D7AFC22928908EC200BC2CEA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22828908EC200BC2CEA /* AccountView.swift */; };
+		D7AFC22B289092CA00BC2CEA /* ResourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */; };
+		D7AFC2302892C1B800BC2CEA /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22F2892C1B800BC2CEA /* TabButtonView.swift */; };
+		D7AFC2322892C29200BC2CEA /* TabSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2312892C29200BC2CEA /* TabSectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D79443A1288E9FD10078C8B0 /* ROKCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROKCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROKCalculatorApp.swift; sourceTree = "<group>"; };
+		D79443A6288E9FD10078C8B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D79443A8288E9FD60078C8B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D79443AB288E9FD60078C8B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D79443AD288E9FD60078C8B0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D79443B0288E9FD60078C8B0 /* ROKCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ROKCalculator.xcdatamodel; sourceTree = "<group>"; };
+		D79443BA288EA06B0078C8B0 /* RssCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssCalculatorViewModel.swift; sourceTree = "<group>"; };
+		D79443C1288EAB4A0078C8B0 /* ROKCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ROKCalculator.entitlements; sourceTree = "<group>"; };
+		D79443C3288ECBC20078C8B0 /* KingdomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomView.swift; sourceTree = "<group>"; };
+		D79443C728902A4D0078C8B0 /* AccountRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRowView.swift; sourceTree = "<group>"; };
+		D79443CB28903A8C0078C8B0 /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
+		D79443CD28903BB70078C8B0 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		D79443D02890449F0078C8B0 /* TotalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabView.swift; sourceTree = "<group>"; };
+		D7AFC21A289060DE00BC2CEA /* Kingdom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingdom.swift; sourceTree = "<group>"; };
+		D7AFC21C289060E400BC2CEA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D7AFC21E2890645400BC2CEA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D7AFC223289080B500BC2CEA /* TotalTabDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabDetailView.swift; sourceTree = "<group>"; };
+		D7AFC2252890819200BC2CEA /* TotalTabPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabPreviewView.swift; sourceTree = "<group>"; };
+		D7AFC22828908EC200BC2CEA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceItem.swift; sourceTree = "<group>"; };
+		D7AFC22F2892C1B800BC2CEA /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
+		D7AFC2312892C29200BC2CEA /* TabSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D794439E288E9FD10078C8B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7944398288E9FD00078C8B0 = {
+			isa = PBXGroup;
+			children = (
+				D79443A3288E9FD10078C8B0 /* ROKCalculator */,
+				D79443A2288E9FD10078C8B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D79443A2288E9FD10078C8B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79443A1288E9FD10078C8B0 /* ROKCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79443A3288E9FD10078C8B0 /* ROKCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				D79443C1288EAB4A0078C8B0 /* ROKCalculator.entitlements */,
+				D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */,
+				D79443A6288E9FD10078C8B0 /* ContentView.swift */,
+				D79443B8288EA03F0078C8B0 /* Model */,
+				D79443B9288EA0430078C8B0 /* ViewModel */,
+				D79443B7288EA03B0078C8B0 /* View */,
+				D79443A8288E9FD60078C8B0 /* Assets.xcassets */,
+				D79443AD288E9FD60078C8B0 /* Persistence.swift */,
+				D79443AF288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld */,
+				D79443AA288E9FD60078C8B0 /* Preview Content */,
+			);
+			path = ROKCalculator;
+			sourceTree = "<group>";
+		};
+		D79443AA288E9FD60078C8B0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D79443AB288E9FD60078C8B0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D79443B7288EA03B0078C8B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */,
+				D79443C3288ECBC20078C8B0 /* KingdomView.swift */,
+				D7AFC22E2892C1A400BC2CEA /* Tab */,
+				D79443C728902A4D0078C8B0 /* AccountRowView.swift */,
+				D79443CF28903BC20078C8B0 /* PieChart */,
+				D7AFC22728908EAD00BC2CEA /* Account */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D79443B8288EA03F0078C8B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7AFC21A289060DE00BC2CEA /* Kingdom.swift */,
+				D7AFC21C289060E400BC2CEA /* Account.swift */,
+				D7AFC21E2890645400BC2CEA /* Resources.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D79443B9288EA0430078C8B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D79443BA288EA06B0078C8B0 /* RssCalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D79443CF28903BC20078C8B0 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				D79443CB28903A8C0078C8B0 /* PieSliceView.swift */,
+				D79443CD28903BB70078C8B0 /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		D7AFC2202890809300BC2CEA /* TotalTab */ = {
+			isa = PBXGroup;
+			children = (
+				D79443D02890449F0078C8B0 /* TotalTabView.swift */,
+				D7AFC2252890819200BC2CEA /* TotalTabPreviewView.swift */,
+				D7AFC223289080B500BC2CEA /* TotalTabDetailView.swift */,
+			);
+			path = TotalTab;
+			sourceTree = "<group>";
+		};
+		D7AFC22728908EAD00BC2CEA /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D7AFC22828908EC200BC2CEA /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D7AFC22E2892C1A400BC2CEA /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D7AFC2202890809300BC2CEA /* TotalTab */,
+				D7AFC22F2892C1B800BC2CEA /* TabButtonView.swift */,
+				D7AFC2312892C29200BC2CEA /* TabSectionView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79443A0288E9FD10078C8B0 /* ROKCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79443B4288E9FD60078C8B0 /* Build configuration list for PBXNativeTarget "ROKCalculator" */;
+			buildPhases = (
+				D794439D288E9FD10078C8B0 /* Sources */,
+				D794439E288E9FD10078C8B0 /* Frameworks */,
+				D794439F288E9FD10078C8B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROKCalculator;
+			productName = ROKCalculator;
+			productReference = D79443A1288E9FD10078C8B0 /* ROKCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7944399288E9FD00078C8B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D79443A0288E9FD10078C8B0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D794439C288E9FD00078C8B0 /* Build configuration list for PBXProject "ROKCalculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7944398288E9FD00078C8B0;
+			productRefGroup = D79443A2288E9FD10078C8B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79443A0288E9FD10078C8B0 /* ROKCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D794439F288E9FD10078C8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79443AC288E9FD60078C8B0 /* Preview Assets.xcassets in Resources */,
+				D79443A9288E9FD60078C8B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D794439D288E9FD10078C8B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79443CE28903BB70078C8B0 /* PieChartView.swift in Sources */,
+				D79443C4288ECBC30078C8B0 /* KingdomView.swift in Sources */,
+				D7AFC2302892C1B800BC2CEA /* TabButtonView.swift in Sources */,
+				D79443B1288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld in Sources */,
+				D7AFC21F2890645400BC2CEA /* Resources.swift in Sources */,
+				D79443AE288E9FD60078C8B0 /* Persistence.swift in Sources */,
+				D79443A7288E9FD10078C8B0 /* ContentView.swift in Sources */,
+				D7AFC2322892C29200BC2CEA /* TabSectionView.swift in Sources */,
+				D7AFC22B289092CA00BC2CEA /* ResourceItem.swift in Sources */,
+				D7AFC22928908EC200BC2CEA /* AccountView.swift in Sources */,
+				D79443CC28903A8C0078C8B0 /* PieSliceView.swift in Sources */,
+				D7AFC2262890819200BC2CEA /* TotalTabPreviewView.swift in Sources */,
+				D79443BB288EA06B0078C8B0 /* RssCalculatorViewModel.swift in Sources */,
+				D79443A5288E9FD10078C8B0 /* ROKCalculatorApp.swift in Sources */,
+				D7AFC21B289060DE00BC2CEA /* Kingdom.swift in Sources */,
+				D7AFC224289080B500BC2CEA /* TotalTabDetailView.swift in Sources */,
+				D79443C828902A4E0078C8B0 /* AccountRowView.swift in Sources */,
+				D79443D12890449F0078C8B0 /* TotalTabView.swift in Sources */,
+				D7AFC21D289060E400BC2CEA /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D79443B2288E9FD60078C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D79443B3288E9FD60078C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79443B5288E9FD60078C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ROKCalculator/ROKCalculator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ROKCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = AUP52MS6LU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.ROKCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D79443B6288E9FD60078C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ROKCalculator/ROKCalculator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ROKCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = AUP52MS6LU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.ROKCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D794439C288E9FD00078C8B0 /* Build configuration list for PBXProject "ROKCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79443B2288E9FD60078C8B0 /* Debug */,
+				D79443B3288E9FD60078C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79443B4288E9FD60078C8B0 /* Build configuration list for PBXNativeTarget "ROKCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79443B5288E9FD60078C8B0 /* Debug */,
+				D79443B6288E9FD60078C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D79443AF288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D79443B0288E9FD60078C8B0 /* ROKCalculator.xcdatamodel */,
+			);
+			currentVersion = D79443B0288E9FD60078C8B0 /* ROKCalculator.xcdatamodel */;
+			path = ROKCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7944399288E9FD00078C8B0 /* Project object */;
+}
