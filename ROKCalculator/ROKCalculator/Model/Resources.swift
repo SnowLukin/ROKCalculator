@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum RssType: String, CaseIterable {
+    case food = "foodItem"
+    case wood = "woodItem"
+    case stone = "stoneItem"
+    case gold = "goldItem"
+    case gems = "gemItem"
+}
 
 struct Food {
     var one: Int
@@ -409,6 +416,8 @@ struct PickOneChest {
             return value * 7500
         case .gold:
             return value * 3000
+        case .gems:
+            return 0
         }
     }
     
@@ -422,6 +431,8 @@ struct PickOneChest {
             return value * 37500
         case .gold:
             return value * 15000
+        case .gems:
+            return 0
         }
     }
     
@@ -435,6 +446,8 @@ struct PickOneChest {
             return value * 112500
         case .gold:
             return value * 50000
+        case .gems:
+            return 0
         }
     }
     
@@ -448,6 +461,8 @@ struct PickOneChest {
             return value * 375000
         case .gold:
             return value * 200000
+        case .gems:
+            return 0
         }
     }
 }

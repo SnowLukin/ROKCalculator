@@ -9,7 +9,9 @@ import SwiftUI
 
 struct TabSectionView: View {
     @ObservedObject var viewModel: KingdomViewModel
+    @Binding var showAccount: Bool
     let kingdom: Kingdom
+    var animationID: Namespace.ID
     
     var body: some View {
         ZStack {
@@ -27,8 +29,16 @@ struct TabSectionView: View {
             case .accounts:
                 VStack {
                     ForEach(kingdom.accounts) { account in
-                        AccountRowView(account: account)
-                            .padding(.horizontal)
+                        if account.id != viewModel.selectedAccount?.id {
+                            AccountRowView(account: account, animationID: animationID)
+                                .padding(.horizontal)
+                                .onTapGesture {
+                                    withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                        showAccount.toggle()
+                                        viewModel.selectedAccount = account
+                                    }
+                                }
+                        }
                     }
                 }.transition(
                     AnyTransition.asymmetric(

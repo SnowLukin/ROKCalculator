@@ -45,21 +45,4 @@ class RssCalculatorViewModel: ObservableObject {
             ]
         )
     ]
-    
-    func getKingdomRss(accounts: [Account], rssType: RssType) -> Int {
-        var result = 0
-        for account in accounts {
-            switch rssType {
-            case .food:
-                result += account.food.getTotal()
-            case .wood:
-                result += account.wood.getTotal()
-            case .stone:
-                result += account.stone.getTotal()
-            case .gold:
-                result += account.gold.getTotal()
-            }
-        }
-        return result
-    }
 }

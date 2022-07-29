@@ -33,25 +33,23 @@ struct TotalTabPreviewView: View {
             Text("Total chests' resources")
                 .font(.title3.bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
-            VStack(spacing: 5) {
-                HStack {
-                    Image(systemName: "exclamationmark.circle")
-                    Text("Represents only one resource type")
-                }.frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(.red)
-                LazyVGrid(
-                    columns: [
-                        GridItem(.adaptive(minimum: 80), spacing: 2),
-                    ]
-                ) {
-                    foodItem
-                    woodItem
-                    stoneItem
-                    goldItem
-                }
-            }.padding()
-            .background(Color(uiColor: .secondarySystemBackground))
-                .cornerRadius(12)
+            HStack {
+                Image(systemName: "exclamationmark.circle")
+                    .font(.subheadline)
+                Text("Represents only one resource type")
+                    .font(.subheadline)
+            }.frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.red)
+            LazyVGrid(
+                columns: [
+                    GridItem(.adaptive(minimum: 80), spacing: 2),
+                ]
+            ) {
+                foodItem
+                woodItem
+                stoneItem
+                goldItem
+            }
         }
     }
 }

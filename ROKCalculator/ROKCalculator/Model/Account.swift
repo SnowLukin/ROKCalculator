@@ -94,6 +94,26 @@ struct Account: Identifiable {
         String(gems.getTotal() + currentGems)
     }
     
+    var currentFoodValue: String {
+        getRssValue(currentFood)
+    }
+    
+    var currentWoodValue: String {
+        getRssValue(currentWood)
+    }
+    
+    var currentStoneValue: String {
+        getRssValue(currentStone)
+    }
+    
+    var currentGoldValue: String {
+        getRssValue(currentGold)
+    }
+    
+    var currentGemsValue: String {
+        String(currentGems)
+    }
+    
     
     
     private func getRssValue(_ value: Int) -> String {
@@ -103,9 +123,11 @@ struct Account: Identifiable {
         } else if value >= 1000000 {
             let newValue = Double(value) / 1000000
             return "\(String(format: "%.1f", newValue))M"
-        } else {
+        } else if value >= 1000 {
             let newValue = Double(value) / 1000
             return "\(String(format: "%.0f", newValue))K"
+        } else {
+            return String(value)
         }
     }
 }

@@ -114,7 +114,6 @@
 				D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */,
 				D79443C3288ECBC20078C8B0 /* KingdomView.swift */,
 				D7AFC22E2892C1A400BC2CEA /* Tab */,
-				D79443C728902A4D0078C8B0 /* AccountRowView.swift */,
 				D79443CF28903BC20078C8B0 /* PieChart */,
 				D7AFC22728908EAD00BC2CEA /* Account */,
 			);
@@ -162,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D7AFC22828908EC200BC2CEA /* AccountView.swift */,
+				D79443C728902A4D0078C8B0 /* AccountRowView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
