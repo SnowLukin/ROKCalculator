@@ -41,7 +41,9 @@ enum ChartColors: CaseIterable {
 
 struct TotalTabDetailView: View {
     @ObservedObject var kingdom: Kingdom
-    
+    @Binding var currentTab: TabStates
+//    @Binding var currentPage: Int
+//    @Binding var values: [Double]
     @State private var currentPage = 0
     @State private var values: [Double] = []
     
@@ -54,16 +56,20 @@ struct TotalTabDetailView: View {
             VStack(spacing: 0) {
                 HStack(spacing: 0) {
                     leftArrowButton
-                    pageView
+                    if currentTab == .total {
+                        pageView
+                    }
                     rightArrowButton
                 }
-                PieChartRows(
-                    colors: getColors(kingdom.wrappedAccounts.count),
-                    names: kingdom.wrappedAccounts.map { $0.name },
-                    values: values
-                ).padding(.vertical)
-                    .padding(.leading)
-                    .background(Color("content"))
+                if currentTab == .total {
+                    PieChartRows(
+                        colors: getColors(kingdom.wrappedAccounts.count),
+                        names: kingdom.wrappedAccounts.map { $0.name },
+                        values: values
+                    ).padding(.vertical)
+                        .padding(.leading)
+                        .background(Color("content"))
+                }
             }
             .cornerRadius(12)
             .onAppear {
@@ -110,6 +116,35 @@ struct TotalTabDetailView: View {
                     }
                 }
             }
+            .onChange(of: currentTab) { newValue in
+                if newValue == .total {
+                    withAnimation {
+                        switch currentPage {
+                        case 0:
+                            values = kingdom.wrappedAccounts.map {
+                                Double($0.food.getTotal() + Int($0.currentFood))
+                            }
+                        case 1:
+                            values = kingdom.wrappedAccounts.map {
+                                Double($0.wood.getTotal() + Int($0.currentWood))
+                            }
+                        case 2:
+                            values = kingdom.wrappedAccounts.map {
+                                Double($0.stone.getTotal() + Int($0.currentStone))
+                            }
+                        default:
+                            values = kingdom.wrappedAccounts.map {
+                                Double($0.gold.getTotal() + Int($0.currentGold))
+                            }
+                        }
+                    }
+                } else {
+                    withAnimation {
+                        values = []
+                        
+                    }
+                }
+            }
         }
         .padding()
         .background(Color("box"))
@@ -138,7 +173,7 @@ struct TotalTabDetailView_Previews: PreviewProvider {
         let kingdom = context.registeredObjects.first(where: { $0 is Kingdom }) as! Kingdom
         return ZStack {
             Color("background").ignoresSafeArea()
-            TotalTabDetailView(kingdom: kingdom)
+            TotalTabDetailView(kingdom: kingdom, currentTab: .constant(.total))
                 .padding(.horizontal)
                 .environment(\.managedObjectContext, context)
         }

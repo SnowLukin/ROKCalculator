@@ -18,6 +18,9 @@ struct TabSectionView: View {
     
     var animationID: Namespace.ID
     
+    @State private var currentPieChartPage = 0
+    @State private var pieChartRowsValues: [Double] = []
+    
     private var sortedAccounts: [Account] {
         return kingdom.wrappedAccounts.sorted { firstAccount, secondAccount in
             return firstAccount.isMain
@@ -76,7 +79,7 @@ extension TabSectionView {
                         )
                     }.frame(width: 0, height: 0)
                 }
-                TotalTabView(kingdom: kingdom)
+                TotalTabView(kingdom: kingdom, currentTab: $currentTab)
             }
             .padding(.horizontal)
             .padding(.top)
