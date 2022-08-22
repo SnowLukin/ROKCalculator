@@ -1,0 +1,31 @@
+//
+//  TotalTabView.swift
+//  ROKCalculator
+//
+//  Created by Snow Lukin on 26.07.2022.
+//
+
+import SwiftUI
+
+struct TotalTabView: View {
+    
+    @ObservedObject var kingdom: Kingdom
+    
+    var body: some View {
+        VStack {
+            TotalTabPreviewView(kingdom: kingdom)
+            if !kingdom.wrappedAccounts.isEmpty {
+                TotalTabDetailView(kingdom: kingdom)
+            }
+        }
+    }
+}
+
+struct TotalTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        let kingdom = context.registeredObjects.first(where: { $0 is Kingdom }) as! Kingdom
+        return TotalTabView(kingdom: kingdom)
+            .environment(\.managedObjectContext, context)
+    }
+}

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D764A87028ABD41D00A7B20F /* KingdomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A86F28ABD41D00A7B20F /* KingdomCellView.swift */; };
+		D764A87328ABD70700A7B20F /* KingdomCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87228ABD70700A7B20F /* KingdomCellViewModel.swift */; };
+		D764A87528ABDE9C00A7B20F /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87428ABDE9C00A7B20F /* AccountListView.swift */; };
+		D764A87828ABE27B00A7B20F /* AccountRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87728ABE27B00A7B20F /* AccountRowViewModel.swift */; };
+		D764A87A28ABFECF00A7B20F /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87928ABFECF00A7B20F /* AccountCreationView.swift */; };
+		D764A87D28AC0ED800A7B20F /* AccountCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87C28AC0ED800A7B20F /* AccountCreationViewModel.swift */; };
+		D764A87F28AC0F3400A7B20F /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A87E28AC0F3400A7B20F /* CustomNavigationLink.swift */; };
+		D764A88228AC482400A7B20F /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A88128AC482400A7B20F /* CustomTabbarView.swift */; };
+		D764A88428AC4E1D00A7B20F /* TabCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A88328AC4E1D00A7B20F /* TabCurveShape.swift */; };
+		D764A88628AC51FB00A7B20F /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A88528AC51FB00A7B20F /* CustomTabBarItem.swift */; };
+		D764A88928AC56A000A7B20F /* ResourcesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764A88828AC56A000A7B20F /* ResourcesTabView.swift */; };
+		D7670200289AA65D00C96C4B /* RssContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76701FF289AA65D00C96C4B /* RssContainerView.swift */; };
+		D7670202289AA69600C96C4B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7670201289AA69600C96C4B /* AccountViewModel.swift */; };
+		D7670204289AA8E400C96C4B /* RssGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7670203289AA8E400C96C4B /* RssGridView.swift */; };
 		D79443A5288E9FD10078C8B0 /* ROKCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */; };
 		D79443A7288E9FD10078C8B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443A6288E9FD10078C8B0 /* ContentView.swift */; };
 		D79443A9288E9FD60078C8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79443A8288E9FD60078C8B0 /* Assets.xcassets */; };
@@ -19,18 +33,64 @@
 		D79443CC28903A8C0078C8B0 /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443CB28903A8C0078C8B0 /* PieSliceView.swift */; };
 		D79443CE28903BB70078C8B0 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443CD28903BB70078C8B0 /* PieChartView.swift */; };
 		D79443D12890449F0078C8B0 /* TotalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79443D02890449F0078C8B0 /* TotalTabView.swift */; };
-		D7AFC21B289060DE00BC2CEA /* Kingdom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21A289060DE00BC2CEA /* Kingdom.swift */; };
-		D7AFC21D289060E400BC2CEA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21C289060E400BC2CEA /* Account.swift */; };
-		D7AFC21F2890645400BC2CEA /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21E2890645400BC2CEA /* Resources.swift */; };
+		D797710D28A144D6008A12DC /* Extension + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797710C28A144D6008A12DC /* Extension + View.swift */; };
+		D7AFC21F2890645400BC2CEA /* TypesEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC21E2890645400BC2CEA /* TypesEnums.swift */; };
 		D7AFC224289080B500BC2CEA /* TotalTabDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC223289080B500BC2CEA /* TotalTabDetailView.swift */; };
 		D7AFC2262890819200BC2CEA /* TotalTabPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2252890819200BC2CEA /* TotalTabPreviewView.swift */; };
 		D7AFC22928908EC200BC2CEA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22828908EC200BC2CEA /* AccountView.swift */; };
 		D7AFC22B289092CA00BC2CEA /* ResourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */; };
 		D7AFC2302892C1B800BC2CEA /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC22F2892C1B800BC2CEA /* TabButtonView.swift */; };
 		D7AFC2322892C29200BC2CEA /* TabSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2312892C29200BC2CEA /* TabSectionView.swift */; };
+		D7AFC2D32899A88500BC2CEA /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2D22899A88500BC2CEA /* SampleData.swift */; };
+		D7AFC2EA2899CE7F00BC2CEA /* Kingdom+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2D42899CE7E00BC2CEA /* Kingdom+CoreDataClass.swift */; };
+		D7AFC2EB2899CE7F00BC2CEA /* Kingdom+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2D52899CE7E00BC2CEA /* Kingdom+CoreDataProperties.swift */; };
+		D7AFC2EE2899CE7F00BC2CEA /* Gold+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2D82899CE7F00BC2CEA /* Gold+CoreDataClass.swift */; };
+		D7AFC2EF2899CE7F00BC2CEA /* Gold+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2D92899CE7F00BC2CEA /* Gold+CoreDataProperties.swift */; };
+		D7AFC2F22899CE7F00BC2CEA /* ActionPoints+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2DC2899CE7F00BC2CEA /* ActionPoints+CoreDataClass.swift */; };
+		D7AFC2F32899CE7F00BC2CEA /* ActionPoints+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2DD2899CE7F00BC2CEA /* ActionPoints+CoreDataProperties.swift */; };
+		D7AFC2F42899CE7F00BC2CEA /* VIP+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2DE2899CE7F00BC2CEA /* VIP+CoreDataClass.swift */; };
+		D7AFC2F52899CE7F00BC2CEA /* VIP+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2DF2899CE7F00BC2CEA /* VIP+CoreDataProperties.swift */; };
+		D7AFC2F62899CE7F00BC2CEA /* Stone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E02899CE7F00BC2CEA /* Stone+CoreDataClass.swift */; };
+		D7AFC2F72899CE7F00BC2CEA /* Stone+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E12899CE7F00BC2CEA /* Stone+CoreDataProperties.swift */; };
+		D7AFC2FA2899CE7F00BC2CEA /* Materials+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E42899CE7F00BC2CEA /* Materials+CoreDataClass.swift */; };
+		D7AFC2FB2899CE7F00BC2CEA /* Materials+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E52899CE7F00BC2CEA /* Materials+CoreDataProperties.swift */; };
+		D7AFC2FC2899CE7F00BC2CEA /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E62899CE7F00BC2CEA /* Account+CoreDataClass.swift */; };
+		D7AFC2FD2899CE7F00BC2CEA /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E72899CE7F00BC2CEA /* Account+CoreDataProperties.swift */; };
+		D7AFC2FE2899CE7F00BC2CEA /* PickOneChest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E82899CE7F00BC2CEA /* PickOneChest+CoreDataClass.swift */; };
+		D7AFC2FF2899CE7F00BC2CEA /* PickOneChest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC2E92899CE7F00BC2CEA /* PickOneChest+CoreDataProperties.swift */; };
+		D7AFC3022899D15200BC2CEA /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3002899D15200BC2CEA /* Food+CoreDataClass.swift */; };
+		D7AFC3032899D15200BC2CEA /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3012899D15200BC2CEA /* Food+CoreDataProperties.swift */; };
+		D7AFC3082899D39300BC2CEA /* Wood+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3042899D39300BC2CEA /* Wood+CoreDataClass.swift */; };
+		D7AFC3092899D39300BC2CEA /* Wood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3052899D39300BC2CEA /* Wood+CoreDataProperties.swift */; };
+		D7AFC30A2899D39300BC2CEA /* Gems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3062899D39300BC2CEA /* Gems+CoreDataClass.swift */; };
+		D7AFC30B2899D39300BC2CEA /* Gems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFC3072899D39300BC2CEA /* Gems+CoreDataProperties.swift */; };
+		D7CC6A9628A2B196005BF7AF /* StatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6A9528A2B196005BF7AF /* StatusBarStyle.swift */; };
+		D7CC6A9928A3E467005BF7AF /* ResourcesDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6A9828A3E467005BF7AF /* ResourcesDataView.swift */; };
+		D7CC6A9B28A57AA6005BF7AF /* KingdomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6A9A28A57AA5005BF7AF /* KingdomViewModel.swift */; };
+		D7CC6A9D28A5ACF0005BF7AF /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6A9C28A5ACEF005BF7AF /* ImagePickerView.swift */; };
+		D7CC6A9F28A6757D005BF7AF /* KingdomsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6A9E28A6757D005BF7AF /* KingdomsListView.swift */; };
+		D7CC6AA328A941F8005BF7AF /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6AA228A941F8005BF7AF /* Placeholder.swift */; };
+		D7CC6AA528AA7D4A005BF7AF /* CurrentRssContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6AA428AA7D4A005BF7AF /* CurrentRssContainerView.swift */; };
+		D7CC6AA728AA7D6C005BF7AF /* Extension + Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6AA628AA7D6C005BF7AF /* Extension + Int.swift */; };
+		D7CC6AA928AA8DAA005BF7AF /* KingdomCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6AA828AA8DA9005BF7AF /* KingdomCreationView.swift */; };
+		D7CC6ACA28AAB53D005BF7AF /* KingdomCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC6AC928AAB53D005BF7AF /* KingdomCreationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D764A86F28ABD41D00A7B20F /* KingdomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomCellView.swift; sourceTree = "<group>"; };
+		D764A87228ABD70700A7B20F /* KingdomCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomCellViewModel.swift; sourceTree = "<group>"; };
+		D764A87428ABDE9C00A7B20F /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		D764A87728ABE27B00A7B20F /* AccountRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRowViewModel.swift; sourceTree = "<group>"; };
+		D764A87928ABFECF00A7B20F /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
+		D764A87C28AC0ED800A7B20F /* AccountCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationViewModel.swift; sourceTree = "<group>"; };
+		D764A87E28AC0F3400A7B20F /* CustomNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
+		D764A88128AC482400A7B20F /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
+		D764A88328AC4E1D00A7B20F /* TabCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurveShape.swift; sourceTree = "<group>"; };
+		D764A88528AC51FB00A7B20F /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		D764A88828AC56A000A7B20F /* ResourcesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTabView.swift; sourceTree = "<group>"; };
+		D76701FF289AA65D00C96C4B /* RssContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssContainerView.swift; sourceTree = "<group>"; };
+		D7670201289AA69600C96C4B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D7670203289AA8E400C96C4B /* RssGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssGridView.swift; sourceTree = "<group>"; };
 		D79443A1288E9FD10078C8B0 /* ROKCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROKCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROKCalculatorApp.swift; sourceTree = "<group>"; };
 		D79443A6288E9FD10078C8B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,15 +105,47 @@
 		D79443CB28903A8C0078C8B0 /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		D79443CD28903BB70078C8B0 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		D79443D02890449F0078C8B0 /* TotalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabView.swift; sourceTree = "<group>"; };
-		D7AFC21A289060DE00BC2CEA /* Kingdom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingdom.swift; sourceTree = "<group>"; };
-		D7AFC21C289060E400BC2CEA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		D7AFC21E2890645400BC2CEA /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D797710C28A144D6008A12DC /* Extension + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + View.swift"; sourceTree = "<group>"; };
+		D7AFC21E2890645400BC2CEA /* TypesEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesEnums.swift; sourceTree = "<group>"; };
 		D7AFC223289080B500BC2CEA /* TotalTabDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabDetailView.swift; sourceTree = "<group>"; };
 		D7AFC2252890819200BC2CEA /* TotalTabPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTabPreviewView.swift; sourceTree = "<group>"; };
 		D7AFC22828908EC200BC2CEA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceItem.swift; sourceTree = "<group>"; };
 		D7AFC22F2892C1B800BC2CEA /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
 		D7AFC2312892C29200BC2CEA /* TabSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSectionView.swift; sourceTree = "<group>"; };
+		D7AFC2D22899A88500BC2CEA /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		D7AFC2D42899CE7E00BC2CEA /* Kingdom+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingdom+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2D52899CE7E00BC2CEA /* Kingdom+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingdom+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2D82899CE7F00BC2CEA /* Gold+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gold+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2D92899CE7F00BC2CEA /* Gold+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gold+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2DC2899CE7F00BC2CEA /* ActionPoints+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionPoints+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2DD2899CE7F00BC2CEA /* ActionPoints+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionPoints+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2DE2899CE7F00BC2CEA /* VIP+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VIP+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2DF2899CE7F00BC2CEA /* VIP+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VIP+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2E02899CE7F00BC2CEA /* Stone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stone+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2E12899CE7F00BC2CEA /* Stone+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stone+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2E42899CE7F00BC2CEA /* Materials+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2E52899CE7F00BC2CEA /* Materials+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Materials+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2E62899CE7F00BC2CEA /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2E72899CE7F00BC2CEA /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC2E82899CE7F00BC2CEA /* PickOneChest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickOneChest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC2E92899CE7F00BC2CEA /* PickOneChest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickOneChest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC3002899D15200BC2CEA /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC3012899D15200BC2CEA /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC3042899D39300BC2CEA /* Wood+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wood+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC3052899D39300BC2CEA /* Wood+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wood+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7AFC3062899D39300BC2CEA /* Gems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7AFC3072899D39300BC2CEA /* Gems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7CC6A9528A2B196005BF7AF /* StatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarStyle.swift; sourceTree = "<group>"; };
+		D7CC6A9828A3E467005BF7AF /* ResourcesDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesDataView.swift; sourceTree = "<group>"; };
+		D7CC6A9A28A57AA5005BF7AF /* KingdomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomViewModel.swift; sourceTree = "<group>"; };
+		D7CC6A9C28A5ACEF005BF7AF /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		D7CC6A9E28A6757D005BF7AF /* KingdomsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomsListView.swift; sourceTree = "<group>"; };
+		D7CC6AA228A941F8005BF7AF /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		D7CC6AA428AA7D4A005BF7AF /* CurrentRssContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRssContainerView.swift; sourceTree = "<group>"; };
+		D7CC6AA628AA7D6C005BF7AF /* Extension + Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Int.swift"; sourceTree = "<group>"; };
+		D7CC6AA828AA8DA9005BF7AF /* KingdomCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomCreationView.swift; sourceTree = "<group>"; };
+		D7CC6AC928AAB53D005BF7AF /* KingdomCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingdomCreationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +159,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7492A8A28A1446B00C3F8D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D797710C28A144D6008A12DC /* Extension + View.swift */,
+				D7CC6AA628AA7D6C005BF7AF /* Extension + Int.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D764A87128ABD6F500A7B20F /* KingdomCell */ = {
+			isa = PBXGroup;
+			children = (
+				D764A87228ABD70700A7B20F /* KingdomCellViewModel.swift */,
+				D764A86F28ABD41D00A7B20F /* KingdomCellView.swift */,
+			);
+			path = KingdomCell;
+			sourceTree = "<group>";
+		};
+		D764A87628ABE25F00A7B20F /* AccountRow */ = {
+			isa = PBXGroup;
+			children = (
+				D764A87728ABE27B00A7B20F /* AccountRowViewModel.swift */,
+				D79443C728902A4D0078C8B0 /* AccountRowView.swift */,
+			);
+			path = AccountRow;
+			sourceTree = "<group>";
+		};
+		D764A87B28AC0EC600A7B20F /* AccountCreation */ = {
+			isa = PBXGroup;
+			children = (
+				D764A87C28AC0ED800A7B20F /* AccountCreationViewModel.swift */,
+				D764A87928ABFECF00A7B20F /* AccountCreationView.swift */,
+			);
+			path = AccountCreation;
+			sourceTree = "<group>";
+		};
+		D764A88028AC481200A7B20F /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D764A88128AC482400A7B20F /* CustomTabbarView.swift */,
+				D764A88528AC51FB00A7B20F /* CustomTabBarItem.swift */,
+				D764A88328AC4E1D00A7B20F /* TabCurveShape.swift */,
+			);
+			path = CustomTabbar;
+			sourceTree = "<group>";
+		};
+		D764A88728AC568000A7B20F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D764A88028AC481200A7B20F /* CustomTabbar */,
+				D79443B7288EA03B0078C8B0 /* ResourcesTab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D76701FE289AA64A00C96C4B /* RssContainer_Grid */ = {
+			isa = PBXGroup;
+			children = (
+				D7670203289AA8E400C96C4B /* RssGridView.swift */,
+				D76701FF289AA65D00C96C4B /* RssContainerView.swift */,
+				D7CC6AA428AA7D4A005BF7AF /* CurrentRssContainerView.swift */,
+			);
+			path = RssContainer_Grid;
+			sourceTree = "<group>";
+		};
 		D7944398288E9FD00078C8B0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +246,12 @@
 				D79443C1288EAB4A0078C8B0 /* ROKCalculator.entitlements */,
 				D79443A4288E9FD10078C8B0 /* ROKCalculatorApp.swift */,
 				D79443A6288E9FD10078C8B0 /* ContentView.swift */,
+				D7492A8A28A1446B00C3F8D6 /* Extensions */,
 				D79443B8288EA03F0078C8B0 /* Model */,
 				D79443B9288EA0430078C8B0 /* ViewModel */,
-				D79443B7288EA03B0078C8B0 /* View */,
+				D764A88728AC568000A7B20F /* View */,
 				D79443A8288E9FD60078C8B0 /* Assets.xcassets */,
-				D79443AD288E9FD60078C8B0 /* Persistence.swift */,
+				D7AFC27A289947FB00BC2CEA /* DataManager */,
 				D79443AF288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld */,
 				D79443AA288E9FD60078C8B0 /* Preview Content */,
 			);
@@ -108,24 +266,51 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D79443B7288EA03B0078C8B0 /* View */ = {
+		D79443B7288EA03B0078C8B0 /* ResourcesTab */ = {
 			isa = PBXGroup;
 			children = (
+				D764A88828AC56A000A7B20F /* ResourcesTabView.swift */,
+				D764A87E28AC0F3400A7B20F /* CustomNavigationLink.swift */,
 				D7AFC22A289092CA00BC2CEA /* ResourceItem.swift */,
 				D79443C3288ECBC20078C8B0 /* KingdomView.swift */,
+				D7CC6A9E28A6757D005BF7AF /* KingdomsListView.swift */,
+				D764A87128ABD6F500A7B20F /* KingdomCell */,
+				D7CC6ACB28AAB557005BF7AF /* KingdomCreation */,
 				D7AFC22E2892C1A400BC2CEA /* Tab */,
 				D79443CF28903BC20078C8B0 /* PieChart */,
 				D7AFC22728908EAD00BC2CEA /* Account */,
+				D7CC6AA228A941F8005BF7AF /* Placeholder.swift */,
+				D7CC6A9428A2B180005BF7AF /* StatusBarStyle */,
 			);
-			path = View;
+			path = ResourcesTab;
 			sourceTree = "<group>";
 		};
 		D79443B8288EA03F0078C8B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D7AFC21A289060DE00BC2CEA /* Kingdom.swift */,
-				D7AFC21C289060E400BC2CEA /* Account.swift */,
-				D7AFC21E2890645400BC2CEA /* Resources.swift */,
+				D7AFC2D42899CE7E00BC2CEA /* Kingdom+CoreDataClass.swift */,
+				D7AFC2D52899CE7E00BC2CEA /* Kingdom+CoreDataProperties.swift */,
+				D7AFC2D82899CE7F00BC2CEA /* Gold+CoreDataClass.swift */,
+				D7AFC2D92899CE7F00BC2CEA /* Gold+CoreDataProperties.swift */,
+				D7AFC2DC2899CE7F00BC2CEA /* ActionPoints+CoreDataClass.swift */,
+				D7AFC2DD2899CE7F00BC2CEA /* ActionPoints+CoreDataProperties.swift */,
+				D7AFC2DE2899CE7F00BC2CEA /* VIP+CoreDataClass.swift */,
+				D7AFC2DF2899CE7F00BC2CEA /* VIP+CoreDataProperties.swift */,
+				D7AFC3002899D15200BC2CEA /* Food+CoreDataClass.swift */,
+				D7AFC3012899D15200BC2CEA /* Food+CoreDataProperties.swift */,
+				D7AFC2E02899CE7F00BC2CEA /* Stone+CoreDataClass.swift */,
+				D7AFC2E12899CE7F00BC2CEA /* Stone+CoreDataProperties.swift */,
+				D7AFC3042899D39300BC2CEA /* Wood+CoreDataClass.swift */,
+				D7AFC3052899D39300BC2CEA /* Wood+CoreDataProperties.swift */,
+				D7AFC3062899D39300BC2CEA /* Gems+CoreDataClass.swift */,
+				D7AFC3072899D39300BC2CEA /* Gems+CoreDataProperties.swift */,
+				D7AFC2E42899CE7F00BC2CEA /* Materials+CoreDataClass.swift */,
+				D7AFC2E52899CE7F00BC2CEA /* Materials+CoreDataProperties.swift */,
+				D7AFC2E62899CE7F00BC2CEA /* Account+CoreDataClass.swift */,
+				D7AFC2E72899CE7F00BC2CEA /* Account+CoreDataProperties.swift */,
+				D7AFC2E82899CE7F00BC2CEA /* PickOneChest+CoreDataClass.swift */,
+				D7AFC2E92899CE7F00BC2CEA /* PickOneChest+CoreDataProperties.swift */,
+				D7AFC21E2890645400BC2CEA /* TypesEnums.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				D79443BA288EA06B0078C8B0 /* RssCalculatorViewModel.swift */,
+				D7CC6A9A28A57AA5005BF7AF /* KingdomViewModel.swift */,
+				D7670201289AA69600C96C4B /* AccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,8 +347,12 @@
 		D7AFC22728908EAD00BC2CEA /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				D764A87428ABDE9C00A7B20F /* AccountListView.swift */,
+				D764A87628ABE25F00A7B20F /* AccountRow */,
 				D7AFC22828908EC200BC2CEA /* AccountView.swift */,
-				D79443C728902A4D0078C8B0 /* AccountRowView.swift */,
+				D764A87B28AC0EC600A7B20F /* AccountCreation */,
+				D7CC6A9728A3E42D005BF7AF /* EditingResourcesDataView */,
+				D76701FE289AA64A00C96C4B /* RssContainer_Grid */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -174,6 +365,41 @@
 				D7AFC2312892C29200BC2CEA /* TabSectionView.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		D7AFC27A289947FB00BC2CEA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D79443AD288E9FD60078C8B0 /* Persistence.swift */,
+				D7AFC2D22899A88500BC2CEA /* SampleData.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D7CC6A9428A2B180005BF7AF /* StatusBarStyle */ = {
+			isa = PBXGroup;
+			children = (
+				D7CC6A9528A2B196005BF7AF /* StatusBarStyle.swift */,
+			);
+			path = StatusBarStyle;
+			sourceTree = "<group>";
+		};
+		D7CC6A9728A3E42D005BF7AF /* EditingResourcesDataView */ = {
+			isa = PBXGroup;
+			children = (
+				D7CC6A9C28A5ACEF005BF7AF /* ImagePickerView.swift */,
+				D7CC6A9828A3E467005BF7AF /* ResourcesDataView.swift */,
+			);
+			path = EditingResourcesDataView;
+			sourceTree = "<group>";
+		};
+		D7CC6ACB28AAB557005BF7AF /* KingdomCreation */ = {
+			isa = PBXGroup;
+			children = (
+				D7CC6AC928AAB53D005BF7AF /* KingdomCreationViewModel.swift */,
+				D7CC6AA828AA8DA9005BF7AF /* KingdomCreationView.swift */,
+			);
+			path = KingdomCreation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,25 +472,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AFC2F52899CE7F00BC2CEA /* VIP+CoreDataProperties.swift in Sources */,
 				D79443CE28903BB70078C8B0 /* PieChartView.swift in Sources */,
 				D79443C4288ECBC30078C8B0 /* KingdomView.swift in Sources */,
 				D7AFC2302892C1B800BC2CEA /* TabButtonView.swift in Sources */,
 				D79443B1288E9FD60078C8B0 /* ROKCalculator.xcdatamodeld in Sources */,
-				D7AFC21F2890645400BC2CEA /* Resources.swift in Sources */,
+				D7AFC2F42899CE7F00BC2CEA /* VIP+CoreDataClass.swift in Sources */,
+				D7AFC2FF2899CE7F00BC2CEA /* PickOneChest+CoreDataProperties.swift in Sources */,
+				D7CC6AA728AA7D6C005BF7AF /* Extension + Int.swift in Sources */,
+				D7AFC21F2890645400BC2CEA /* TypesEnums.swift in Sources */,
 				D79443AE288E9FD60078C8B0 /* Persistence.swift in Sources */,
+				D764A87328ABD70700A7B20F /* KingdomCellViewModel.swift in Sources */,
+				D764A87D28AC0ED800A7B20F /* AccountCreationViewModel.swift in Sources */,
+				D7AFC2F72899CE7F00BC2CEA /* Stone+CoreDataProperties.swift in Sources */,
+				D7AFC3092899D39300BC2CEA /* Wood+CoreDataProperties.swift in Sources */,
+				D7CC6AA928AA8DAA005BF7AF /* KingdomCreationView.swift in Sources */,
+				D764A88228AC482400A7B20F /* CustomTabbarView.swift in Sources */,
+				D7AFC2FB2899CE7F00BC2CEA /* Materials+CoreDataProperties.swift in Sources */,
 				D79443A7288E9FD10078C8B0 /* ContentView.swift in Sources */,
+				D7AFC2F32899CE7F00BC2CEA /* ActionPoints+CoreDataProperties.swift in Sources */,
+				D764A88928AC56A000A7B20F /* ResourcesTabView.swift in Sources */,
+				D7CC6A9F28A6757D005BF7AF /* KingdomsListView.swift in Sources */,
 				D7AFC2322892C29200BC2CEA /* TabSectionView.swift in Sources */,
 				D7AFC22B289092CA00BC2CEA /* ResourceItem.swift in Sources */,
 				D7AFC22928908EC200BC2CEA /* AccountView.swift in Sources */,
 				D79443CC28903A8C0078C8B0 /* PieSliceView.swift in Sources */,
+				D7CC6A9928A3E467005BF7AF /* ResourcesDataView.swift in Sources */,
+				D7AFC2FC2899CE7F00BC2CEA /* Account+CoreDataClass.swift in Sources */,
+				D764A87528ABDE9C00A7B20F /* AccountListView.swift in Sources */,
+				D7CC6ACA28AAB53D005BF7AF /* KingdomCreationViewModel.swift in Sources */,
+				D764A87F28AC0F3400A7B20F /* CustomNavigationLink.swift in Sources */,
+				D764A88428AC4E1D00A7B20F /* TabCurveShape.swift in Sources */,
+				D7AFC2FA2899CE7F00BC2CEA /* Materials+CoreDataClass.swift in Sources */,
+				D7AFC30A2899D39300BC2CEA /* Gems+CoreDataClass.swift in Sources */,
+				D7670202289AA69600C96C4B /* AccountViewModel.swift in Sources */,
+				D7AFC2F22899CE7F00BC2CEA /* ActionPoints+CoreDataClass.swift in Sources */,
+				D764A87A28ABFECF00A7B20F /* AccountCreationView.swift in Sources */,
+				D7CC6AA528AA7D4A005BF7AF /* CurrentRssContainerView.swift in Sources */,
+				D7AFC3082899D39300BC2CEA /* Wood+CoreDataClass.swift in Sources */,
+				D7CC6A9D28A5ACF0005BF7AF /* ImagePickerView.swift in Sources */,
+				D7AFC30B2899D39300BC2CEA /* Gems+CoreDataProperties.swift in Sources */,
+				D764A88628AC51FB00A7B20F /* CustomTabBarItem.swift in Sources */,
+				D7AFC2EA2899CE7F00BC2CEA /* Kingdom+CoreDataClass.swift in Sources */,
+				D7AFC2FD2899CE7F00BC2CEA /* Account+CoreDataProperties.swift in Sources */,
 				D7AFC2262890819200BC2CEA /* TotalTabPreviewView.swift in Sources */,
 				D79443BB288EA06B0078C8B0 /* RssCalculatorViewModel.swift in Sources */,
+				D797710D28A144D6008A12DC /* Extension + View.swift in Sources */,
+				D7AFC3032899D15200BC2CEA /* Food+CoreDataProperties.swift in Sources */,
+				D7AFC2F62899CE7F00BC2CEA /* Stone+CoreDataClass.swift in Sources */,
 				D79443A5288E9FD10078C8B0 /* ROKCalculatorApp.swift in Sources */,
-				D7AFC21B289060DE00BC2CEA /* Kingdom.swift in Sources */,
 				D7AFC224289080B500BC2CEA /* TotalTabDetailView.swift in Sources */,
+				D7670200289AA65D00C96C4B /* RssContainerView.swift in Sources */,
+				D7AFC2EB2899CE7F00BC2CEA /* Kingdom+CoreDataProperties.swift in Sources */,
+				D7CC6A9B28A57AA6005BF7AF /* KingdomViewModel.swift in Sources */,
 				D79443C828902A4E0078C8B0 /* AccountRowView.swift in Sources */,
+				D7AFC3022899D15200BC2CEA /* Food+CoreDataClass.swift in Sources */,
+				D7AFC2EF2899CE7F00BC2CEA /* Gold+CoreDataProperties.swift in Sources */,
+				D7AFC2D32899A88500BC2CEA /* SampleData.swift in Sources */,
+				D7CC6A9628A2B196005BF7AF /* StatusBarStyle.swift in Sources */,
+				D764A87828ABE27B00A7B20F /* AccountRowViewModel.swift in Sources */,
+				D7AFC2EE2899CE7F00BC2CEA /* Gold+CoreDataClass.swift in Sources */,
+				D764A87028ABD41D00A7B20F /* KingdomCellView.swift in Sources */,
+				D7670204289AA8E400C96C4B /* RssGridView.swift in Sources */,
 				D79443D12890449F0078C8B0 /* TotalTabView.swift in Sources */,
-				D7AFC21D289060E400BC2CEA /* Account.swift in Sources */,
+				D7AFC2FE2899CE7F00BC2CEA /* PickOneChest+CoreDataClass.swift in Sources */,
+				D7CC6AA328A941F8005BF7AF /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +681,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.ROKCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,7 +712,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.ROKCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

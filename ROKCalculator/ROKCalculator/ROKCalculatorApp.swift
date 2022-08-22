@@ -9,15 +9,12 @@ import SwiftUI
 
 @main
 struct ROKCalculatorApp: App {
-    @StateObject private var viewModel = RssCalculatorViewModel()
-    let persistenceController = PersistenceController.shared
+    let persistenceController = PersistenceController.preview
 
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            KingdomView(kingdom: viewModel.kingdoms[0])
-                .environmentObject(RssCalculatorViewModel())
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
