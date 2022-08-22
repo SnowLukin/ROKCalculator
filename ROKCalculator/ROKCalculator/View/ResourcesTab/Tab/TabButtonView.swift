@@ -9,29 +9,32 @@ import SwiftUI
 
 struct TabButtonView: View {
     @ObservedObject var viewModel: KingdomViewModel
-    @Environment(\.colorScheme) private var colorScheme
+    
+    @Binding var currentTab: TabStates
     let tab: TabStates
     var animationID: Namespace.ID
+    
+    @Environment(\.colorScheme) private var colorScheme
     
     var body: some View {
         Button {
             withAnimation {
-                viewModel.currentTab = tab
+                currentTab = tab
             }
         } label: {
             VStack {
                 Text(tab.rawValue)
                     .fontWeight(.semibold)
                     .foregroundColor(
-                        viewModel.currentTab == tab
+                        currentTab == tab
                         ? .white
                         : Color("background")
                     )
                 
-                if viewModel.currentTab == tab {
+                if currentTab == tab {
                     RoundedRectangle(cornerRadius: 7)
                         .fill(.white)
-//                        .matchedGeometryEffect(id: "TAB", in: animationID)
+                        .matchedGeometryEffect(id: "kingdomTabAnimation", in: animationID)
                         .frame(
                             width: UIScreen.main.bounds.width / 2 - 50,
                             height: 3

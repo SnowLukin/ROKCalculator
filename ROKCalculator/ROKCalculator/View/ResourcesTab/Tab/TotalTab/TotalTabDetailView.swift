@@ -9,10 +9,10 @@ import SwiftUI
 
 enum ChartColors: CaseIterable {
     case pink
-    case blue
+    case green
     case purple
     case orange
-    case green
+    case blue
     case yellow
     case gray
     case red

@@ -366,10 +366,12 @@ class AccountViewModel: ObservableObject {
         case .chestFour:
             account.pickChests.four = Int64(value)
         }
+        print("Preparing to save")
         do {
             try viewContext.save()
+            print("New value saved. \(account.name) -> \(value) for \(selection.rawValue)")
         } catch {
-            print("Failed updating account resource value.")
+            print("Failed updating account's resource value.")
         }
     }
 }

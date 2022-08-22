@@ -99,7 +99,7 @@ extension RssGridView {
             keyboardFocus = nil
             keyboardFocus = nil
         } label: {
-            Image(imageName)
+            Image(systemName: imageName)
                 .foregroundColor(.white)
         }
     }
@@ -166,12 +166,12 @@ extension RssGridView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]) {
                 ForEach(getSelection(tag: tag), id: \.self) { selection in
                     RssContainerView(account: account, selection: selection)
-                    .onTapGesture {
-                        currentSelection = selection
-                        text = String(viewModel.getValue(selection, account: account))
-                        keyboardFocus = .hiddenFocus
-                        keyboardFocus = .keyboardFocus
-                    }
+                        .onTapGesture {
+                            currentSelection = selection
+                            text = String(viewModel.getValue(selection, account: account))
+                            keyboardFocus = .hiddenFocus
+                            keyboardFocus = .keyboardFocus
+                        }
                 }
             }
         }

@@ -13,12 +13,14 @@ struct AccountListView: View {
     @ObservedObject var kingdom: Kingdom
     
     var body: some View {
-        ForEach(kingdom.wrappedAccounts) { account in
-            CustomNavigationLink {
-                AccountView(account: account)
-            } label: {
-                AccountRowView(account: account)
-            }.padding(.horizontal)
+        VStack {
+            ForEach(kingdom.wrappedAccounts) { account in
+                CustomNavigationLink {
+                    AccountView(account: account)
+                } label: {
+                    AccountRowView(account: account)
+                }.padding(.horizontal)
+            }
         }
     }
 }

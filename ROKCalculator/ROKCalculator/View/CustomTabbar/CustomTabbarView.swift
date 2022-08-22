@@ -45,24 +45,16 @@ struct CustomTabbarView: View {
                 selectedTab: $selectedTab,
                 tabMidPoints: $tabMidPoints
             )
-        }.padding()
+        }.padding(15)
+            .padding(.bottom)
             .overlay(
-                RoundedRectangle(cornerRadius: 30)
-                    .strokeBorder(Color.white, lineWidth: 1)
-                    .clipShape(TabCurveShape(tabPoint: getCurvePoint() - 15))
+                RoundedRectangle(cornerRadius: 15)
+                    .strokeBorder(Color.black, lineWidth: 1)
             )
             .background(
                 Color("box")
-                    .clipShape(TabCurveShape(tabPoint: getCurvePoint() - 15))
             )
-            .overlay(alignment: .bottomLeading) {
-                Circle()
-                    .fill(.white)
-                    .frame(width: 10, height: 10)
-                    .offset(x: getCurvePoint() - 20)
-            }
-            .cornerRadius(30)
-            .padding(.horizontal)
+            .cornerRadius(15)
     }
 }
 
@@ -72,7 +64,10 @@ struct CustomTabbarView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack(alignment: .bottom) {
             Color("background").ignoresSafeArea()
-            CustomTabbarView(selectedTab: $selectedTab)
+            VStack {
+                Spacer()
+                CustomTabbarView(selectedTab: $selectedTab)
+            }.ignoresSafeArea()
         }.preferredColorScheme(.dark)
     }
 }

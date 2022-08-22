@@ -17,29 +17,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            TabView {
-                ResourcesTabView(
-                    viewModel: resourcesViewModel,
-                    showAccountCreationView: $showAccountCreationView
-                )
-                .navigationTitle("")
-                .navigationBarHidden(true)
-                .tabItem {
-                    Label("Resources", systemImage: "house")
-                }
-                Text("Equipment")
-                    .tabItem {
-                        Label("Equipment", systemImage: "house")
-                    }
-                Text("Commanders")
-                    .tabItem {
-                        Label("Commanders", systemImage: "house")
-                    }
-                Text("Mails")
-                    .tabItem {
-                        Label("Mails", systemImage: "house")
-                    }
-            }.background(Color("background"))
+            ZStack {
+                Color("background").ignoresSafeArea()
+                currentTab()
+                VStack {
+                    Spacer()
+                    CustomTabbarView(selectedTab: $selectedTab)
+                }.ignoresSafeArea()
+            }
         }.preferredColorScheme(.dark)
     }
 }
@@ -60,7 +45,7 @@ extension ContentView {
                 ResourcesTabView(
                     viewModel: resourcesViewModel,
                     showAccountCreationView: $showAccountCreationView
-                )
+                ).navigationBarHidden(true)
             case .equipment:
                 Text("Equipment")
             case .commanders:

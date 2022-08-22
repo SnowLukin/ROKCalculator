@@ -26,105 +26,55 @@ struct KingdomView: View {
     
     @EnvironmentObject private var viewModel: KingdomViewModel
     @Namespace private var animationID
-    
-    @State private var headerHeight: CGFloat = 0
-    @State private var headerOffset: CGFloat = 0
-    @State private var lastHeaderOffset: CGFloat = 0
-    @State private var swipeDirection: SwipeDirection = .none
-    // Value from where it shifted Up/Down
-    @State private var shiftOffset: CGFloat = 0
-    
-    @State private var hideStatusBar: Bool = true
+    @State private var currentTab: TabStates = .total
+    @State private var hideHeader = false
     
     var body: some View {
-            ZStack {
-                Color("background").ignoresSafeArea()
+        ZStack {
+            Color("background").ignoresSafeArea()
+            VStack(spacing: 0) {
+                VStack {
+                    if !hideHeader {
+                        header()
+                    }
+                    sectionButtons()
+                }
+                .padding(.top, safeArea().top)
+                .background(Color("box"))
                 TabSectionView(
                     viewModel: viewModel,
-                    kingdom: kingdom,
-                    headerHeight: $headerHeight,
-                    headerOffset: $headerOffset,
-                    lastHeaderOffset: $lastHeaderOffset,
-                    swipeDirection: $swipeDirection,
-                    shiftOffset: $shiftOffset,
+                    kingdom: kingdom, hideHeader: $hideHeader,
+                    currentTab: $currentTab,
                     showAccountCreationView: $showAccountCreationView,
                     animationID: animationID
                 )
             }
-            .ignoresSafeArea(.all, edges: .top)
-            .coordinateSpace(name: "KingdomViewScroll")
-            .overlay(alignment: .top) {
-                if viewModel.selectedAccount == nil {
-                    header
-                        .anchorPreference(key: HeaderBoundKey.self, value: .bounds) { $0 }
-                        .overlayPreferenceValue(HeaderBoundKey.self) { value in
-                            GeometryReader { proxy in
-                                if let anchor = value {
-                                    Color.clear
-                                        .onAppear {
-                                            // Retreiving rect using proxy
-                                            headerHeight = proxy[anchor].height
-                                        }
-                                }
-                            }
-                        }
-                        .offset(
-                            y: -headerOffset < headerHeight
-                            ? headerOffset
-                            : (headerOffset < 0 ? headerOffset : 0)
-                        )
-                }
-            }
-            .ignoresSafeArea(.all, edges: .top)
-            .onAppear {
-                if headerOffset >= -1.0 {
-                    withAnimation {
-                        hideStatusBar = true
-                    }
-                } else {
-                    withAnimation {
-                        hideStatusBar = false
-                    }
-                }
-            }
-            .onChange(of: headerOffset, perform: { newValue in
-                if round(newValue) >= -1.0 {
-                    withAnimation {
-                        hideStatusBar = true
-                    }
-                } else {
-                    withAnimation {
-                        hideStatusBar = false
-                    }
-                }
-            })
-//            .statusBarStyle(hidden: $hideStatusBar)
+        }.ignoresSafeArea()
+        .navigationBarHidden(true)
     }
 }
 
 extension KingdomView {
-    private var header: some View {
-        VStack {
-            kingdomTitle
-                .padding(.horizontal)
-            HStack(spacing: 0) {
-                TabButtonView(
-                    viewModel: viewModel,
-                    tab: .total,
-                    animationID: animationID
-                )
-                TabButtonView(
-                    viewModel: viewModel,
-                    tab: .accounts,
-                    animationID: animationID
-                )
-            }.padding(.top, 5)
-        }.padding(.top)
-            .padding(.top, safeArea().top)
-            .background(Color("box"))
+    @ViewBuilder
+    private func sectionButtons() -> some View {
+        HStack(spacing: 0) {
+            TabButtonView(
+                viewModel: viewModel,
+                currentTab: $currentTab,
+                tab: .total,
+                animationID: animationID
+            )
+            TabButtonView(
+                viewModel: viewModel,
+                currentTab: $currentTab,
+                tab: .accounts,
+                animationID: animationID
+            )
+        }.padding(.top, 5)
     }
     
-    private var kingdomTitle: some View {
+    @ViewBuilder
+    private func header() -> some View {
         VStack {
             HStack {
                 Text("**Kingdom #\(String(kingdom.name))**")
@@ -145,6 +95,8 @@ extension KingdomView {
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding(.horizontal)
+        .padding(.top)
     }
 }
 

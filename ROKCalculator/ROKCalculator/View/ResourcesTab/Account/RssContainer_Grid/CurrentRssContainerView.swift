@@ -14,7 +14,6 @@ struct CurrentRssContainerView: View {
     
     @EnvironmentObject private var viewModel: AccountViewModel
     @Environment(\.managedObjectContext) private var viewContext
-    @State private var text = ""
     
     var body: some View {
         ZStack(alignment: .leading) {

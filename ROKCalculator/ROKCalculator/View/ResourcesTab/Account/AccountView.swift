@@ -59,7 +59,6 @@ struct AccountView: View {
         }
         .navigationBarHidden(false)
         .navigationTitle(account.name)
-//        .navigationBarTitleDisplayMode(.inline)
         .environmentObject(accountViewModel)
     }
 }
@@ -100,7 +99,7 @@ extension AccountView {
     }
     
     private var chestRss: some View {
-        CustomNavigationLink {
+        NavigationLink {
             ResourcesDataView(account: account, tag: .chests)
                 .environmentObject(accountViewModel)
         } label: {
@@ -127,7 +126,7 @@ extension AccountView {
     }
     
     private var currentRss: some View {
-        CustomNavigationLink {
+        NavigationLink {
             ResourcesDataView(account: account, tag: .current)
                 .environmentObject(accountViewModel)
         } label: {
@@ -155,7 +154,7 @@ extension AccountView {
     }
     
     private var bundleRss: some View {
-        CustomNavigationLink {
+        NavigationLink {
             ResourcesDataView(account: account, tag: .food)
                 .environmentObject(accountViewModel)
         } label: {
