@@ -10,6 +10,7 @@ import SwiftUI
 struct KingdomCellView: View {
     
     let kingdom: Kingdom
+    @ObservedObject var kingdomViewModel: KingdomViewModel
     
     @StateObject private var viewModel = KingdomCellViewModel()
     @Environment(\.managedObjectContext) private var viewContext
@@ -41,6 +42,9 @@ extension KingdomCellView {
         .cornerRadius(12)
         .overlay(alignment: .topTrailing) {
             Button {
+                if kingdomViewModel.selectedKingdom?.name == kingdom.name {
+                    kingdomViewModel.selectedKingdom = nil
+                }
                 withAnimation {
                     viewModel.deleteKingdom(kingdom, viewContext: viewContext)
                 }
